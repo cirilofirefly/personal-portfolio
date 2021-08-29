@@ -1,0 +1,188 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Poppins';
+    color: #f4f4f4;
+}
+
+.sidebar {
+    position: fixed;
+    width: 300px;
+    height: 100vh;
+    background: #202020;
+    display: flex;
+    justify-content: flex-end;
+    text-align: end;
+    align-items: center;
+}
+
+.sidebar .logo {
+    position: fixed;
+    color: #f4f4f4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 150px;
+    top: 50px;
+    left: 60px;
+}
+
+.sidebar .logo a {
+    font-family: 'Consolas';
+    text-decoration: none;
+    color: #f4f4f4;
+}
+
+.sidebar .logo svg, .sidebar .logo a {
+    margin: 0 3px 0 3px;
+}
+
+.sidebar nav {
+    margin-right: 70px;
+}
+
+.sidebar nav ul {
+    list-style: none;
+}
+
+.sidebar nav ul li {
+    margin: 10px 10px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.sidebar nav ul li a {
+    text-decoration: none;
+    color: #f4f4f4;
+    font-size: 18;
+    font-family: 'Consolas';
+}
+
+.sidebar nav ul li div {
+    width: 10px;
+    height: 10px;
+    background: #f4f4f4;
+    border-radius: 30px;
+    margin-left: 20px;
+}
+
+.sidebar nav .v-line {
+    position: fixed;
+    border-left: 3px solid #f4f4f4;
+    height: 140px;
+    top: 55%;
+    left: 36.7%;
+    margin-top: -100px;
+    margin-left: -250px;
+}
+
+.sidebar nav ul li a:hover, .active {
+    font-size: 24px;
+    font-weight: bold;
+    transition: all 0.2s ease-in-out;
+    --webkit-transition: all 0.2s ease-in-out;
+    --moz-transition: all 0.2s ease-in-out;
+}
+
+.section {
+    margin-left: 300px;
+    width: calc(100% - 300px);
+    height: 100vh;
+    background: #202020;
+}
+
+#about .header {
+    padding-top: 200px;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+}
+
+#about .header img {
+    width: 200px;
+    height: 150px;
+}
+
+#about .header .name span {
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+}
+
+#about .header .name span p {
+    margin-right: 10px;
+}
+
+#about .header .name {
+    margin-left: 20px;
+}
+
+#about .header .name .links {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+
+#about .header .name .links span {
+    margin: 0 0 10px 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#about .header .name .links span #link-icon {
+    width: 20px;
+    height: 20px;
+    margin-right: 5px;
+}
+
+#about .header .name .links span a {
+    font-size: 14px;
+    font-family: 'Consolas';
+    text-decoration: underline;
+    color: #f4f4f4;
+}
+
+#about .header .name .links span #external-link {
+    width: 14px;
+    height: 14px;
+}
+
+#about .description {
+    width: 700px;
+    margin: 30px 0 0 30px;
+}
+
+#about .description p {
+    text-align: left;
+}
+
+#about .description p a {
+    color: #f4f4f4;
+}
+
+#about .description p a:nth-child(2), #about .description p a:nth-child(3) {
+    font-family: 'Consolas';
+}
+
+#about .header #techstack {
+    background: blue;
+}
+
+#projects {
+    background: green;
+}
+
+#contact {
+    background: orange;
+}
