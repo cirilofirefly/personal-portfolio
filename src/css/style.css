@@ -13,9 +13,10 @@ body {
     font-family: 'Poppins';
     color: #f4f4f4;
 }
+
 main {
-     width: 100%;
-     background: #202020;
+    width: 100%;
+    background: #202020;
 }
 
 .sidebar {
@@ -84,7 +85,7 @@ main {
     border-left: 3px solid #f4f4f4;
     height: 140px;
     top: 55%;
-    left: 36.7%;
+    left: 36.5%;
     margin-top: -100px;
     margin-left: -250px;
 }
@@ -105,7 +106,6 @@ main {
     height: 100vh;
     background: #202020;
 }
-
 
 #about .header {
     display: flex;
@@ -180,8 +180,36 @@ main {
     font-family: 'Consolas';
 }
 
-#about .header #techstack {
-    background: blue;
+#techstack .wrapper {
+    width: 700px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-auto-rows: minmax(50px, auto);
+    grid-gap: 1em;
+}
+
+#techstack .wrapper .header {
+    grid-column: 1/4;
+}
+
+#techstack .wrapper .header h3 {
+    font-family: 'Consolas';
+}
+
+#techstack .wrapper .techbrand-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#techstack .wrapper .techbrand-content img {
+    width: 100px;
+    height: 100px;
+}
+
+#techstack .wrapper .techbrand-content p {
+    font-family: 'Consolas';
 }
 
 #projects {
@@ -190,4 +218,29 @@ main {
 
 #contact {
     background: orange;
+}
+
+/* width */
+
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+/* Track */
+
+::-webkit-scrollbar-track {
+    background: #202020;
+}
+
+/* Handle */
+
+::-webkit-scrollbar-thumb {
+    background: #f4f4f4;
+    border-radius: 30px;
+}
+
+/* Handle on hover */
+
+::-webkit-scrollbar-thumb:hover {
+    background: #d3d3d3;
 }
